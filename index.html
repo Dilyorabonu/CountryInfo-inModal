@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <script
+      src="https://kit.fontawesome.com/3098f60edb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
+      <div class="modal hidden" id="modal">
+        <div class="modal-header">
+          <h3>Country information</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-title">Switzerland</h2>
+          <p>
+            Switzerland, officially the Swiss Confederation, is a landlocked
+            country located in west-central Europe. It is bordered by Italy to
+            the south, France to the west, Germany to the north and Austria and
+            Liechtenstein to the east. Switzerland is geographically divided
+            among the Swiss Plateau, the Alps and the Jura; the Alps occupy the
+            greater part of the territory, whereas most of the country's
+            population of 9 million are concentrated on the plateau, which hosts
+            its largest cities and economic centres, including Zürich, Geneva,
+            and Basel.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
-<script src="./index.js"></script>
+    <div class="overlay hidden" id="overlay"></div>
+  </body>
+  <script src="./index.js"></script>
 </html>
